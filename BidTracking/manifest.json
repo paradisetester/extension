@@ -1,0 +1,34 @@
+{
+	"manifest_version": 2,
+
+	"name": "Paradise TechSoft Solutions Pvt Ltd",
+	"description": "A simple extension for Chrome to track upwork bid",
+	"version": "1.0",
+	"author": "@paradisetechsoft",
+
+	"background": {
+		"scripts": ["assets/js/jquery-1.11.3.min.js","popup.js"],
+		"persistent": true
+	},	   
+	"content_security_policy": "script-src 'self'; object-src 'self'",
+	"permissions": [
+        "tabs",
+        "*://*/*",
+        "http://*/",
+        "https://*/",
+        "file:///C:/",
+        "file:///",
+        "file://*/",
+		"webRequest",
+        "*://*.google.com/"
+    ],	
+	"browser_action": {
+		"default_icon": "assets/icon/logo.png",
+		"default_popup": "popup.html"
+	},
+    "icons": {
+	      "128": "assets/icon/logo-19.png",
+	      "16": "assets/icon/logo-19.png",
+	      "48": "assets/icon/logo.png"
+	   }
+}
